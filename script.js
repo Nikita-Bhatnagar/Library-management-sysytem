@@ -90,7 +90,7 @@ function displayBooks(books) {
       </div>
       <div class="col-5 col">
       
-      <p><span>ID: </span>${books[i]["id"]}</p>
+     <span class="id-heading">ID: </span><p>${books[i]["id"]}</p>
       </div>
       <div class="col-6 col">
         <div class="delete-btn"><i class="fas fa-trash"></i></div>
