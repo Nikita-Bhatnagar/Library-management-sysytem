@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <div class="brand-name">
+            <img src="images/logocropped.png"></img>
+          </div>
+          <div class="add-book hidden-later">
+            <button type="button" class="reg-btn">
+              <span>+</span><p> Register a New Book</p>
+            </button>
+          </div>
+         
+        </div>
+       
+
+        <div class="options">
+          <div class="add-book initially-hidden">
+            <button type="button" class="reg-btn">
+              <span>+</span><p> Register a New Book</p>
+            </button>
+          </div>
+          <div class="search-book">
+            <input
+              type="text"
+              class="search-input options-btn"
+              placeholder="Search..."
+              name="book-name"
+            />
+            <button class="search-btn" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="sort-books">
+            <select name="sort-by" id="sort" class="options-btn">
+              <option value="" disabled selected>Sort</option>
+              <option value="book-name">by title</option>
+              <option value="author-name">by author name</option>
+            </select>
+          </div>
+          <div class="filter-books">
+            <select name="category" class="options-btn" id="filter">
+              <option value="" disabled selected>Category</option>
+              <option value="all">All</option>
+              <option value="Fiction">Fiction</option>
+              <option value="Textbooks">Textbooks</option>
+              <option value="Health and Wellness">Health and Wellness</option>
+              <option value="Biography">Biography</option>
+              <option value="Business">Business</option>
+            </select>
+          </div>
+        </div>
+        
+      </div>
+      <section class="dashboard">
+        <div class="recent-books">
+          <h3><span>Recently added</span></h3>
+          <hr />
+          <div class="book-row">
+           
+          </div>
+        </div>
+        <div class="quote-wrapper">
+          <div class="quote">
+            <p>
+              "I have always imagined that paradise will be a kind of a
+              library."
+            </p>
+            <br />
+            <p>JORGE LUIS BORGES</p>
+          </div>
+        </div>
+      </section>
+      <div class="col-names">
+        <div class="row">
+          <div class="col-1 col">
+            <div class="sno info-headings">S.No.</div>
+          </div>
+          <div class="col-2 col">
+            <div class="title info-headings">Title</div>
+          </div>
+          <div class="col-3 col">
+            <div class="author info-headings">Author</div>
+          </div>
+          <div class="col-4 col">
+            <div class="category info-headings">Category</div>
+          </div>
+          <div class="col-5 col">
+            <div class="id info-headings">Book ID</div>
+          </div>
+          <div class="col-6 col">
+            <div class="info-headings">Action</div>
+          </div>
+        </div>
+      </div>
+      <section class="book-list">
+       
+      </section>
+    </div>
+    <div class="container-reg" id="registration-cont">
+      <div class="box">
+        <h3 class="reg-book-heading">Add book info</h3>
+        <form class="book-details">
+          <label for="bookname">Book Title:</label>
+          <input type="text" id="bookname" class="" required="true" />
+          <label for="authorname">Author's Name:</label>
+          <input type="text" id="authorname" class="" required="true" />
+          <label for="category">Select Category:</label>
+          <select name="" id="category">
+            <option value="Fiction">Fiction</option>
+            <option value="Textbooks">Textbooks</option>
+            <option value="Health and Wellness">Health and Wellness</option>
+            <option value="Biography">Biography</option>
+            <option value="Business">Business</option>
+          </select>
+          <label for="book-image">Specify image url</label>
+          <input type="url" id="book-image">
+          <div class="buttons">
+            <button id="register" type="button">Register book</button>
+            <button id="edit" type="button">Edit details</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
