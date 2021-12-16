@@ -358,7 +358,7 @@ option:hover {
 .fa-bars::before {
   display: none;
 }
-.col p span {
+.col p span, .id-heading {
   display: none;
 }
 
@@ -403,7 +403,7 @@ option:hover {
   .book-info {
     text-align: center;
   }
-  .col p span {
+  .col p span, .id-heading{
     display: unset;
     font-weight: 600;
   }
