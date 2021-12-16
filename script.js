@@ -15,7 +15,7 @@ const container = document.querySelector(".container");
 const registrationBtn = document.querySelector(".reg-btn");
 const divOptions = document.querySelector("div.options");
 const select = document.querySelectorAll("select");
-
+const registerbutton=document.querySelector(".registerbutton");
 document.addEventListener("DOMContentLoaded", displayBooks);
 
 infoSubmitBtn = document.querySelector("#register");
@@ -26,6 +26,8 @@ searchbtn.addEventListener("keydown", searchBook);
 searchbtn.addEventListener("click", showCross);
 selectSort.addEventListener("click", sortBooks);
 registrationBtn.addEventListener("click", displayModal);
+registerbutton.addEventListener("click", displayModal);
+
 
 for (let i = 0; i < select.length; i++) {
   select[i].addEventListener("change", Scrolltobooks);
